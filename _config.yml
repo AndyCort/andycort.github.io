@@ -16,7 +16,7 @@ timezone:
 
 title: My Blog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Being towards death, and being towards living. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -73,7 +73,7 @@ theme_mode: dark # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /img/me.jpeg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
