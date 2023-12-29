@@ -27,7 +27,6 @@ img: /assets/img/about-head-background.jpeg"
 
     <p>重度宅家患者，互联网幽灵</p>
 
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的个人博客。
 
     <p></p>
     
