@@ -2,8 +2,8 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
-description: "Hey, this is BY."
-header-img: "img/post-bg-rwd.jpg"
+description: "Hey, this is Andrew."
+header-img: /assets/img/about-head-background.jpg"
 ---
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
