@@ -1,9 +1,8 @@
 ---
 title: 开始的开始
-date: 2023-12-25 17:00:00 +0800
-author: Andrew
-img: 
-tags: [test]
+date: 2023-12-27 17:00:00 +0800
+categories: [情感, 相亲]
+tags: ['1']     # TAG names should always be lowercase
 ---
 <p>为什么想来做这样的Blog而不是公众号之类的东西呢？</p>
 <p>大概是并不希望自己写的东西会和自己的生活有什么交集，但又期望互联网的某一角会有人能发现我。</p>
