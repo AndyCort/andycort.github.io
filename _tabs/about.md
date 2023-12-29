@@ -2,16 +2,14 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+description: "Hey, this is BY."
+header-img: "img/post-bg-rwd.jpg"
 ---
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
----
-layout: page
-title: "About"
-description: "Hey, this is BY."
-header-img: "img/post-bg-rwd.jpg"
----
+
+
 
 <!-- Language Selector -->
 <!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
