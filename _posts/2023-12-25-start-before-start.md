@@ -1,7 +1,7 @@
 ---
 title: 开始的开始
 date: 2023-12-25 17:00:00 +0800
-categories: [A]
+categories: [AAA]
 tags: [开始, 新]     # TAG names should always be lowercase
 ---
 <p>为什么想来做这样的Blog而不是公众号之类的东西呢？</p>
