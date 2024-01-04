@@ -25,9 +25,10 @@ image: /assets/img/about-head-background.jpeg
 
     <p>Hey，我是<strong>Andrew</strong>，一只医学牲，现在还在读本科。</p>
 
-    <p>重度宅家患者，互联网幽灵</p>
+    <p>重度宅man，社交懒惰患者，互联网幽灵</p>
 
-
+    <p>期待这个地方会有人经过，若是能从中得到一些感悟或是能量那便是最好了。</p>
+    
     <p></p>
     
    
