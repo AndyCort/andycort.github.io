@@ -3,6 +3,7 @@ title: 开始的开始
 date: 2023-12-25 17:00:00 +0800
 categories: [AAA]
 tags: [开始, 新]     # TAG names should always be lowercase
+pin: true
 ---
 <p>人这一生总是要面临数不尽的开始。</p>
 <p>从开始获得一个新的生命，到开始接触并融入这个世界，再到开始老去，并慢慢与这个世界告别。</p>
