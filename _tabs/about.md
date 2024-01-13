@@ -12,3 +12,4 @@ image: /assets/img/about-head-background.jpeg
 <p style=text-indent:2em>重度宅man，社交懒惰患者，互联网幽灵</p>
 
 <p style=text-indent:2em>期待这个地方会有人经过，若是能从中得到一些感悟或是能量那便是最好了。</p>
+
