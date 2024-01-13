@@ -3,8 +3,8 @@ icon: fas fa-info-circle
 order: 4
 description: "Hey, this is Andrew."
 ---
-    <blockquote><p>冰冻三尺 非一日之寒<br>
-    积土成山 非斯须之作</p></blockquote>
+<blockquote><p>冰冻三尺 非一日之寒<br>
+积土成山 非斯须之作</p></blockquote>
 
 <p style="text-indent:2em">Hey，我是<strong>Andrew</strong>，一只医学牲，现在还在读本科。</p>
 
