@@ -4,48 +4,5 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4 url:('assets/img/bg.png') no-repeat;}
-nav {
-    background-color: #333;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
+    background: #f4f4f4 url:('assets/img/bg.png') no-repeat;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-}
-section {
-    padding: 4rem 2rem;
-    min-height: 100vh;
-}
-#home {
-    text-align: center;
-    padding-top: 8rem;
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: white;
-}
-.project-card {
-    background: white;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: white;
-}
-@media (max-width: 600px) {
-         .avatar { width: 100px; height: 100px; }
-         .info-section h1 { font-size: 2em; }
-     }
