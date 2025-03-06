@@ -46,3 +46,7 @@ footer {
     background: #333;
     color: white;
 }
+@media (max-width: 600px) {
+         .avatar { width: 100px; height: 100px; }
+         .info-section h1 { font-size: 2em; }
+     }
