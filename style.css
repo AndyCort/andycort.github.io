@@ -46,30 +46,3 @@ footer {
     background: #333;
     color: white;
 }
-/* 悬停效果 */
-nav a:hover {
-    color: #ff6b6b;
-    transition: color 0.3s;
-}
-.project-card:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s;
-}
-/* 按钮样式 */
-a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #2575fc;
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-}
-@media (max-width: 768px) {
-       nav ul {
-           flex-direction: column;
-           gap: 1rem;
-       }
-       section {
-           padding: 2rem 1rem;
-       }
-   }
