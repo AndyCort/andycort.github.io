@@ -7,28 +7,64 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">				
-        <!-- 个人信息 -->
-        <div class="info-container">
-            <h1>安然</h1>
-            <!-- 头像区 -->
-            <div class="avatar">
-                <img src="assets/img/avatar.jpg" alt="你的头像" class="avatar">
+    <div class="container">
+        <div id="container-left">                    
+            <!-- 个人信息 -->
+            <div class="card" id="info-container">
+                <!-- 头像区 -->
+                <div class="avatar">
+                    <img src="assets/img/avatar.jpg" alt="你的头像" class="avatar">
+                </div>
+                <!--姓名区-->
+                <div class="name">
+                    <span>你的名字</span>
+                </div>
+                <!-- 个人简介 -->
+                <div class="bio">
+                    <span>你的简介</span>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/andycort" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/你的用户名" target="_blank">LinkedIn</a>
-                <a href="mailto:你的邮箱">联系我</a>
+            <!-- 座右铭 -->      
+            <div class="card" id="motto">
+                <span>你所热爱的就是你的生活</span>
+            </div>
+                <!-- 社交链接 -->
+            <div class="card" id="social-links">
+                <a href="https://linkedin.com/in/你的用户名" target="_blank">
+                    LinkedIn
+                </a>
+                <a href="mailto:你的邮箱">
+                    联系我
+                </a>
             </div>
         </div>
-        <div class="motto">
-            <span>你所热爱的就是你的生活</span>
+        <div class="container-right" id="container-right">
+            <!-- 传送门 -->
+            <div class="container-sub" id="links">
+                <div class="card" id="item1">
+                    <a href="https://oblivious.love" target="_blank">碎碎念</a>
+                </div>
+                <div class="card" id="item2">
+                    <a href="https://andycort.github.io" target="_blank">项目</a>
+                </div>
+                <div class="card" id="item3">
+                    <a href="https://andycort.github.io" target="_blank">友链</a>
+                </div>
+                <div class="card" id="item4">
+                    <a href="https://andycort.github.io" target="_blank">归档</a>
+                </div>
+                <div class="card" id="item5">
+                    <a href="https://andycort.github.io" target="_blank">标签</a>
+                </div>
+                <div class="card" id="item6">
+                    <a href="https://andycort.github.io" target="_blank">关于</a>
+                </div>
+            </div>
+            <!-- 时间 -->
+
+                <div class="card" id="time">
+                </div>
         </div>
-        <!-- 传送门 -->
-        <div class="links">
-            <a href="https://oblivious.love" target="_blank">碎碎念</a>
-            <a href="https://andycort.github.io" target="_blank">项目</a>
-            <a href="https://andycort.github.io" target="_blank">关于</a>
     </div>
 </body>
 </html>   
