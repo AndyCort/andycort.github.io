@@ -84,19 +84,37 @@ body {
 }
 
 .container-sub {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    flex-wrap: wrap; /* 允许换行 */
+    height: auto;
 }
 
-.container-sub #item1, #item2, #item3, #item4, #item5, #item6 {
-    padding : 20px;
+.container-sub .item {
+    flex: 1 1 calc(33.33% - 10px); /* 每个项目占 1/3 宽度，留出间隙 */
+    margin: 5px; /* 项目间距 */
+    height: 50px; /* 项目高度（可根据需求调整） */
+    box-sizing: border-box;
+    display: flex; /* 添加 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container-sub .item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.container-sub .item span {
     text-align: center;
+    text-align: center;
+    display: block; /* 确保 span 为块级元素 */
+    width: 100%; /* 占满容器宽度 */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
 }
-
-
-
-
 
 /* 页脚 */
 footer {
