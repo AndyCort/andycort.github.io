@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'Ye-Font';
+    src: url('../fonts/YeZiGongChangFengManXiuXingKai.ttf') format('truetype');
+}
+:root {
+    --default-font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --basic-font-color: white; 
+}    
 /* 基础样式 */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: auto;
 }
 
 .container {
@@ -25,6 +39,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 20px;
+    font-family: var(--default-font);
 }
 
 #container-left {
@@ -37,35 +52,60 @@ body {
 }
 
 #info-container {
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    height: 30%;
+    height: auto;
+    padding: 20px 0;
 }
 
-.avatar{
-    width: 100px;
-    height: 100px;
+.avatar {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin: 10px;
+    margin-bottom: 15px;
 }
 
-#social-links{
+.name {
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Ye-Font';
+    color: var(--basic-font-color);
+    text-align: center;
+}
+
+.bio {
+    margin: 5px 0;
+    font-size: 15px;
+    font-family: 'Ye-Font';
+    color: var(--basic-font-color);
+    text-align: center;
+}
+
+#social-links {
     width: 50%;
-    height: 5px;
+    height: 4%;
     align-items: center;
     align-self: auto;
+    overflow: hidden;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
 }
 
 #motto{
+    display: flex;
     width: 50%;
     height: 10%;
+    justify-content: center;
     align-items: center;
 }
 
 #motto span{
     font-size: 20px;
-    font-weight: bold;
     text-align: center;
-    color: aquamarine;
+    font-family: 'Ye-Font';
+    color: var(--basic-font-color);
 }
 
 #links{
@@ -84,18 +124,24 @@ body {
 }
 
 .container-sub {
-    flex-wrap: wrap; /* 允许换行 */
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
+    width: 100%;
+    max-width: 800px; /* 减小最大宽度 */
+    gap: 15px; /* 使用gap替代margin来控制间距 */
 }
 
 .container-sub .item {
-    flex: 1 1 calc(33.33% - 10px); /* 每个项目占 1/3 宽度，留出间隙 */
-    margin: 5px; /* 项目间距 */
-    height: 50px; /* 项目高度（可根据需求调整） */
+    flex: 0 1 calc(33.33% - 20px); /* 允许缩小但不放大 */
+    width: calc(33.33% - 20px);
+    aspect-ratio: 1.2; /* 稍微调整比例 */
+    margin: 10px;
+    padding: 15px;
     box-sizing: border-box;
-    display: flex; /* 添加 flex 布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -112,8 +158,8 @@ body {
     display: block; /* 确保 span 为块级元素 */
     width: 100%; /* 占满容器宽度 */
     font-family: 'Courier New', Courier, monospace;
+    color: var(--basic-font-color);
     font-size: large;
-    font-weight: bold;
 }
 
 /* 页脚 */
