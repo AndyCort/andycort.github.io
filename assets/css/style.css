@@ -1,11 +1,22 @@
 @font-face {
     font-family: 'Ye-Font';
-    src: url('../fonts/YeZiGongChangFengManXiuXingKai.ttf') format('truetype');
+    src: url('https://cdn.jsdelivr.net/gh/AndyCort/andycort.github.io@master/fonts/YeZiGongChangFengManXiuXingKai.ttf') format('truetype');
 }
+
 :root {
-    --default-font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --basic-font-color: white; 
-}    
+    --glass-bg-color: rgba(255, 255, 255, 0.15);
+    --glass-border-color: rgba(255, 255, 255, 0.2);
+    --glass-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
+    --glass-bg-color-hover: rgba(40, 40, 40, 0.8);
+    --glass-border-color-hover: rgba(60, 60, 60, 0.4);
+}
+
+:root.dark-mode {
+    --glass-bg-color: rgba(30, 30, 30, 0.7);
+    --glass-border-color: rgba(50, 50, 50, 0.3);
+    --glass-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
 /* 基础样式 */
 body {
     font-family: 'Arial', sans-serif;
@@ -22,27 +33,37 @@ a:link {
 
 .container {
     display: flex;
-    background-image: url('https://jsd.cdn.zzko.cn/gh/AndyCort/picx-images-hosting@master/background/bg-homepage.m8iy8g16.jpg');
-    background-size: cover;
+    background: url('https://cdn.jsdelivr.net/gh/AndyCort/picx-images-hosting@master/background/bg-homepage.m8iy8g16.jpg') cover;
     background-position: center;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-.card {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    --webkit-backdrop-filter: blur(10px);
+
+
+/* 玻璃效果 */
+.glass {
+    background-color: var(--glass-bg-color) ;
+    border: 1px solid var(--glass-border-color);
+    box-shadow: var(--glass-box-shadow);
+    border-radius: 12px;
+    padding: 10px;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+    user-select: none;
+}
+.glass:hover {
+    background-color: var(--glass-bg-color);
+    border: 1px solid var(--glass-border-color);
+    box-shadow: var(--glass-box-shadow);
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 20px;
-    font-family: var(--default-font);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-#container-left {
+
+
+.container-left {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -51,7 +72,7 @@ a:link {
     align-items: center;
 }
 
-#info-container {
+.info-container {
     align-items: center;
     justify-content: center;
     width: 50%;
@@ -60,12 +81,16 @@ a:link {
 }
 
 .avatar {
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: 100%;
     border-radius: 50%;
     margin-bottom: 15px;
 }
-
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 .name {
     margin: 10px 0;
     font-size: 20px;
@@ -82,7 +107,7 @@ a:link {
     text-align: center;
 }
 
-#social-links {
+.social-links {
     width: 50%;
     height: 4%;
     align-items: center;
@@ -93,7 +118,7 @@ a:link {
     margin: 0;
 }
 
-#motto{
+.motto{
     display: flex;
     width: 50%;
     height: 10%;
@@ -101,21 +126,21 @@ a:link {
     align-items: center;
 }
 
-#motto span{
+.motto span{
     font-size: 20px;
     text-align: center;
     font-family: 'Ye-Font';
     color: var(--basic-font-color);
 }
 
-#links{
+.links{
     display: flex;
     width: 50%;
     justify-content: center;
     margin: 10px;
 }
 
-#container-right {
+.container-right {
     display: flex;
     width: 50%;
     height: 100%;
