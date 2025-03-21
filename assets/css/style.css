@@ -22,7 +22,7 @@ a:link {
 
 .container {
     display: flex;
-    background-image: url('../img/bg.jpg');
+    background-image: url('https://jsd.cdn.zzko.cn/gh/AndyCort/picx-images-hosting@master/background/bg-homepage.m8iy8g16.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
