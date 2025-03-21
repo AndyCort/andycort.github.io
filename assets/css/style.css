@@ -33,7 +33,7 @@ a:link {
 
 .container {
     display: flex;
-    background: url('https://cdn.jsdelivr.net/gh/AndyCort/picx-images-hosting@master/background/bg-homepage.m8iy8g16.jpg') cover;
+    background: url('https://github.com/AndyCort/picx-images-hosting/raw/master/background/bg-homepage.m8iy8g16.jpg') cover;
     background-position: center;
     height: 100vh;
     justify-content: center;
